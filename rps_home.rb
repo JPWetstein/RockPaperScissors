@@ -1,8 +1,9 @@
 require 'sinatra'
 require 'haml'
-require './helpers/rps_helper.rb'
+require_relative './helpers/rps_helper.rb'
 
 set :port, 3000
+include RpsHelper
 
 get '/' do
   haml :index

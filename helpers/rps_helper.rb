@@ -1,4 +1,4 @@
-helpers do
+module RpsHelper
   def winning_combos
     return {Rock: "Scissors", Paper: "Rock", Scissors: "Paper"}
   end
