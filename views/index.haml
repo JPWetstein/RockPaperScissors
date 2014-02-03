@@ -1,0 +1,11 @@
+%body
+  %form.pure-form.pure-form-stacked{action: "/throw", method: "POST"}
+    %fieldset
+      %legend Rock, Paper, Scissors
+      %label{for: "sign"}Select Throw
+      %select{name: "sign"}
+        %option{value: :Rock} Rock
+        %option{value: :Paper} Paper
+        %option{value: :Scissors} Scissors
+      %br
+        %button.pure-button.pure-button-primary{type: "submit"} Throw!
