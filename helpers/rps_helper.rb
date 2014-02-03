@@ -5,11 +5,11 @@ helpers do
   
   def shoot_result throw, computer_throw
     if throw.eql? computer_throw
-	   return "Tie"
+      return "Tie"
     elsif winning_combos[throw.to_sym].eql? computer_throw
-	   return "Win"
+      return "Win"
     else
-	   return "Lose"
+      return "Lose"
     end
   end
   
