@@ -12,9 +12,19 @@ class RpsTest < Test::Unit::TestCase
     Sinatra::Application
   end
 
-  def test_it_throws_a_rock
+  def test_it_throws_rock
     post '/throw', :sign => 'Rock'
     assert last_response.body.include?('Rock')
+  end
+  
+  def test_it_throws_paper
+    post '/throw', :sign => 'Paper'
+    assert last_response.body.include?('Paper')
+  end
+  
+  def test_it_throws_scissors
+    post '/throw', :sign => 'Scissors'
+    assert last_response.body.include?('Scissors')
   end
   
   def test_rock_should_beat_scissors
