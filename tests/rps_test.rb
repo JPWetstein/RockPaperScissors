@@ -1,7 +1,7 @@
 ENV['RACK_ENV'] = 'test'
 
-require '../rps_home.rb'
-require '../helpers/rps_helper.rb'
+require_relative '../rps_home.rb'
+require_relative '../helpers/rps_helper.rb'
 require 'test/unit'
 require 'rack/test'
 
