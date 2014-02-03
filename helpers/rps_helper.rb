@@ -4,16 +4,16 @@ helpers do
   end
   
   def shoot_result throw, computer_throw
-  	if throw.eql? computer_throw
-    	return "Tie"
-  	elsif winning_combos[throw.to_sym].eql? computer_throw
-  		return "Win"
-  	else
-  		return "Lose"
-  	end
+    if throw.eql? computer_throw
+	   return "Tie"
+    elsif winning_combos[throw.to_sym].eql? computer_throw
+	   return "Win"
+    else
+	   return "Lose"
+    end
   end
   
   def computer_throw
-  	["Rock", "Scissors", "Paper"].sample
+    ["Rock", "Scissors", "Paper"].sample
   end
 end
