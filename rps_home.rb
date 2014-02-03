@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'haml'
 require './helpers/rps_helper.rb'
 
 set :port, 3000
